@@ -1,5 +1,3 @@
-Here’s a sample README.md file for your GitHub repository that covers the project details, deployment instructions, and other relevant information:
-
 ```markdown
 # Mein Kampf Bio Application
 
@@ -88,11 +86,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Replace `https://github.com/yourusername/mein-kampf-bio.git` with the actual URL of your GitHub repository.
 - You can adjust any section to better fit your project specifics or add additional sections if needed.
-
-### Saving the README
-
-1. Create a file named `README.md` in the root of your project directory.
-2. Copy and paste the content above into that file.
-3. Save it, and you’re all set!
-
-Let me know if you need any changes or further assistance!
