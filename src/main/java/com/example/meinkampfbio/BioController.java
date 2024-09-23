@@ -1,16 +1,26 @@
 package com.example.meinkampfbio;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.web.servlet.MockMvc;
 
-@Controller
-public class BioController {
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
-    @GetMapping("/bio")
-    public String getBio(Model model) {
-        String bio = "Mein Kampf is a 1925 autobiographical manifesto by Adolf Hitler, where he outlines his political ideology.";
-        model.addAttribute("bio", bio);
-        return "bio";
+@SpringBootTest
+@AutoConfigureMockMvc
+public class BioControllerTest {
+
+    @Autowired
+    private MockMvc mockMvc;
+
+    @Test
+    public void testBioPage() throws Exception {
+        mockMvc.perform(get("/bio"))
+               .andExpect(status().isOk())
+               .andExpect(view().name("bio"));
     }
 }
