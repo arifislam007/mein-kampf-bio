@@ -9,5 +9,4 @@ public class MeinKampfBioApplication {
     public static void main(String[] args) {
         SpringApplication.run(MeinKampfBioApplication.class, args);
     }
-
 }
