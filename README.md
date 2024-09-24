@@ -76,19 +76,6 @@ Open your web browser and go to:
 http://localhost:8080/mein-kampf-bio/bio
 ```
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss changes.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Inspired by M. K. S. Karam's *The Main Kamp Book*.
-- Built using Spring Boot and Thymeleaf.
-```
 
 ### Customization
 
