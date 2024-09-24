@@ -59,6 +59,13 @@
                     <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
+
+            <!-- Maven WAR Plugin to package the project as a WAR file -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version> <!-- Updated version -->
+            </plugin>
         </plugins>
     </build>
 </project>
