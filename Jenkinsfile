@@ -1,9 +1,9 @@
 pipeline {
-  agent {
-    docker {
-      image 'maven:3.8.5-openjdk-17'
-      args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
-    }
+  agent { any
+  }
+  tools {
+    jdk 'jdk'
+    maven 'mvn'
   }
   stages {
     stage('Checkout') {
