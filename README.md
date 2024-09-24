@@ -17,7 +17,7 @@ This is a web-based application that provides a biography of the book *The Main 
 
 ## Project Structure
 
-```
+```bash
 mein-kampf-bio
 ├── pom.xml
 └── src
