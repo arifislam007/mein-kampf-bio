@@ -18,23 +18,32 @@ This is a web-based application that provides a biography of the book *The Main 
 ## Project Structure
 
 ```bash
-mein-kampf-bio
-├── pom.xml
-└── src
-    ├── main
-    │   ├── java
-    │   │   └── com
-    │   │       └── example
-    │   │           └── meinkampfbio
-    │   │               ├── MeinKampfBioApplication.java
-    │   │               ├── BioController.java
-    │   │               └── ServletInitializer.java
-    │   └── resources
-    │       ├── static
-    │       │   └── images
-    │       │       └── hitler.jpg
-    │       └── templates
-    │           └── bio.html
+mein-kampf-bio/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── example/
+│   │   │           └── meinkampfbio/
+│   │   │               ├── BioController.java      # Your main controller
+│   │   │               └── MeinKampfBioApplication.java  # Main application class
+│   │   └── resources/
+│   │       ├── application.properties               # Configuration properties
+│   │       └── templates/
+│   │           └── bio.html                         # Thymeleaf template
+│   │
+│   └── test/
+│       ├── java/
+│       │   └── com/
+│       │       └── example/
+│       │           └── meinkampfbio/
+│       │               └── BioControllerTest.java   # JUnit test class
+│       └── resources/                                 # Test resources if needed
+│
+├── pom.xml                                            # Maven POM file
+└── Dockerfile                                         # Dockerfile for deployment
+
 ```
 
 ## Getting Started
