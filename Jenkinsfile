@@ -28,9 +28,7 @@ pipeline {
     }
     stage('Docker Imgae Build') {
       steps {
-        sh'''
-           docker build -t arifislam/java-cde-19:${BUILD_BUMBER} .
-        '''
+        deploy adapters: [tomcat9(credentialsId: 'tomcat-access', path: '', url: 'http://192.168.207.133:8080')], contextPath: null, onFailure: false, war: '**/*.war'
       }
     }
   }
