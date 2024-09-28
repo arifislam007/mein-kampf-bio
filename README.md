@@ -80,8 +80,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Inspired by M. K. S. Karam's *The Main Kamp Book*.
 - Built using Spring Boot and Thymeleaf.
 ```
-
-### Customization
-
-- Replace `https://github.com/yourusername/mein-kampf-bio.git` with the actual URL of your GitHub repository.
-- You can adjust any section to better fit your project specifics or add additional sections if needed.
