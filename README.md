@@ -13,6 +13,7 @@ This is a web-based application that provides a biography of the book *The Main 
 - Java Development Kit (JDK) 17 or later
 - Apache Maven
 - Apache Tomcat (or any compatible servlet container)
+- if you don't have tomcat install follow this link: [Tomcat Installation Steps](https://github.com/arifislam007/DevOps_LAB/blob/main/17.LAB-Tomcat/readme.md)
 
 ## Project Structure
 
