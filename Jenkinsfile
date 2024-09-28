@@ -28,7 +28,7 @@ pipeline {
     }
     stage('Docker Imgae Build') {
       steps {
-        deploy adapters: [tomcat9(credentialsId: 'tomcat-access', path: '', url: 'http://192.168.207.133:8080')], contextPath: null, onFailure: false, war: '**/*.war'
+        deploy adapters: [tomcat9(credentialsId: 'tomcat-access', path: '', url: 'http://192.168.207.132:8080')], contextPath: null, onFailure: false, war: '**/*.war'
       }
     }
   }
