@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'pipeline', url: 'https://github.com/arifislam007/mein-kampf-bio.git'
+        git branch: 'tomcat-deploy', url: 'https://github.com/arifislam007/mein-kampf-bio.git'
       }
     }
     stage('Java Complie') {
