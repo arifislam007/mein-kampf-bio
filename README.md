@@ -1,4 +1,3 @@
-```markdown
 # Mein Kampf Bio Application
 
 This is a web-based application that provides a biography of the book *The Main Kamp Book* by M. K. S. Karam. The application is built using Spring Boot and Thymeleaf, and it is packaged as a WAR file for deployment on a servlet container like Apache Tomcat.
