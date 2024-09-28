@@ -75,9 +75,3 @@ Open your web browser and go to:
 ```
 http://localhost:8080/mein-kampf-bio/bio
 ```
-
-
-### Customization
-
-- Replace `https://github.com/yourusername/mein-kampf-bio.git` with the actual URL of your GitHub repository.
-- You can adjust any section to better fit your project specifics or add additional sections if needed.
