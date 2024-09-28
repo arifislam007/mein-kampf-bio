@@ -8,7 +8,6 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        sh 'echo passed'
         git branch: 'pipeline', url: 'https://github.com/arifislam007/mein-kampf-bio.git'
       }
     }
