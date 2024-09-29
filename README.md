@@ -43,6 +43,7 @@ mein-kampf-bio
 - tomcat server with ip address 192.168.207.132 or you need to update Jenkins file for tomcat ip address
 - tomcat GUI manager access password store to jenkins credential id name should be **tomcat-access** or you need to update jenkins script.
 - you jenkins server has docker package installed and jenkins user has permission to execute docker command
+- if you don't have tomcat install follow this link: [Tomcat Installation Steps](https://github.com/arifislam007/DevOps_LAB/blob/main/17.LAB-Tomcat/readme.md)
 ### 1. From you jenkins create a Pipeline Job
 ![image](https://github.com/user-attachments/assets/598736ae-d406-4e99-88cf-fdd13d69af2e)
 
@@ -55,7 +56,7 @@ mein-kampf-bio
 ### 3. From the Script Path it Should be the path of your Jenkins script in this case it should only Jenkinsfile 
 ![image](https://github.com/user-attachments/assets/46d417e5-5ce5-4097-8f19-6b80ab99afc1)
 
-- Now save the job
+- Now save the job and build the job.
 
 
 
