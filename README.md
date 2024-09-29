@@ -1,4 +1,4 @@
-# Mein Kampf Bio Application
+![image](https://github.com/user-attachments/assets/32a9af6c-67a1-442f-a86d-26d983637472)# Mein Kampf Bio Application
 
 This is a web-based application that provides a biography of the book *The Main Kamp Book* by M. K. S. Karam. The application is built using Spring Boot and Thymeleaf, and it is packaged as a WAR file for deployment on a servlet container like Apache Tomcat.
 
@@ -38,50 +38,29 @@ mein-kampf-bio
 
 ## Getting Started
 
-### 1. Clone the Repository
+### Requirment to execute this pipeline
+- jenkins
+- tomcat server with ip address 192.168.207.132 or you need to update Jenkins file for tomcat ip address
+- tomcat GUI manager access password store to jenkins credential id name should be **tomcat-access** or you need to update jenkins script.
+- you jenkins server has docker package installed and jenkins user has permission to execute docker command
+### 1. From you jenkins create a Pipeline Job
+![image](https://github.com/user-attachments/assets/598736ae-d406-4e99-88cf-fdd13d69af2e)
 
-```bash
-git clone https://github.com/yourusername/mein-kampf-bio.git
-cd mein-kampf-bio
-```
 
-### 2. Build the Project
+### 2. On the **Pipeline** Section Select SCM from **Definition**
+- Pest you this git repository link : https://github.com/arifislam007/mein-kampf-bio.git
+- branch should be **pipeline**
+![image](https://github.com/user-attachments/assets/138a80f5-18af-41ab-a8c5-79ce36ca2767)
 
-Make sure you have Maven installed. Run the following command to build the project and generate the WAR file:
+### 3. From the Script Path it Should be the path of your Jenkins script in this case it should only Jenkinsfile 
+![image](https://github.com/user-attachments/assets/46d417e5-5ce5-4097-8f19-6b80ab99afc1)
 
-```bash
-mvn clean package
-```
+- Now save the job
 
-### 3. Deploy on Tomcat
 
-1. Locate the generated WAR file in the `target` directory (e.g., `target/mein-kampf-bio.war`).
-2. Copy the WAR file to the `webapps` directory of your Apache Tomcat installation.
-3. Start your Tomcat server.
 
-### 4. Access the Application
 
-Open your web browser and go to:
 
-```
-http://localhost:8080/mein-kampf-bio/bio
-```
 
-## Contributing
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss changes.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Inspired by M. K. S. Karam's *The Main Kamp Book*.
-- Built using Spring Boot and Thymeleaf.
-```
-
-### Customization
-
-- Replace `https://github.com/yourusername/mein-kampf-bio.git` with the actual URL of your GitHub repository.
-- You can adjust any section to better fit your project specifics or add additional sections if needed.
